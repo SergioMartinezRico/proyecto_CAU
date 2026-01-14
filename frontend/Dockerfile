@@ -1,8 +1,7 @@
 # Usamos una imagen ligera de Nginx
 FROM nginx:alpine
 
-# Copiamos tus archivos HTML/JS al directorio público de Nginx
-# El punto (.) significa "la carpeta actual frontend"
+# Copiamos los archivos HTML/JS al directorio público de Nginx
 COPY . /usr/share/nginx/html
 
 # Exponemos el puerto 80 (el estándar para webs)
